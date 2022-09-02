@@ -6,7 +6,10 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ausleg is to …
+The goal of ausleg is to provide information on laws passed by the
+Australian Parliament since 1901. This package provides data up to
+November 2021. The data was scraped from the [Federal Register of
+Legislation]().
 
 ## Installation
 
@@ -18,7 +21,22 @@ You can install the development version of ausleg from
 devtools::install_github("palesl/ausleg")
 ```
 
-## Example
+## Examples
+
+These examples show some simple functionality of the package:
+
+``` r
+library(ausleg)
+
+getPrincipalActs()
+```
+
+## Use at own risk
+
+I provide no warranty for errors either in the source material, or in my
+data collection. This is my best attempt at faithful redistribution of
+the material available on the Federal Register of Legislation. I would
+be grateful for any
 
 ## Image Attribution
 
