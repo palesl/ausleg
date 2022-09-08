@@ -5,8 +5,7 @@ Authors@R:
     person("Pat", "Leslie", , "patrick.leslie@anu.edu.au", 
     role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-9218-8981"))
-Description: This package provides data from the Federal Register of Legislation, 
-both principal and amending acts since 1901.
+Description: This package provides data from the Federal Register of Legislation, both principal and amending acts since 1901.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
