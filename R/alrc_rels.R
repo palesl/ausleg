@@ -11,7 +11,7 @@
 #' @param rel_type A character string indicating the type of relationship data to filter.
 #'                 Options are "amendments", "repeals", "enabled_by", or "modifications".
 #'                 Default is "amendments".
-#' @return         A filtered data object.
+#' @return         A tibble.
 #' @examples
 #' alrc_relationship_data(rel_type = "repeals")
 #' alrc_relationship_data()
