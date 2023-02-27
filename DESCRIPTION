@@ -1,6 +1,6 @@
 Package: ausleg
 Title: A Package to Provide Data on Australian Federal Legislation
-Version: 0.0.0.9000
+Version: 0.0.0.9002
 Authors@R: 
     person("Pat", "Leslie", , "patrick.leslie@anu.edu.au", 
     role = c("aut", "cre"),

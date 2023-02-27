@@ -26,7 +26,7 @@ alrc_as_made <- function(prin_amend = NULL, leg_type = NULL) {
   }
 
   # defining global variables as null
-  amendingPrincipal <- regsLis <-raw_alrc_as_made<- NULL
+  amendingPrincipal <- regsLis <- NULL
 
   # bring in data
 

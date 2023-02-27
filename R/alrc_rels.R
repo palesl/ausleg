@@ -23,10 +23,6 @@ alrc_relationship_data <- function(rel_type = "amendments") {
     stop("rel_type must be a character string")
   }
 
-  # defining global variables as null
-  raw_alrc_rels_amend_leg <- raw_alrc_rels_repeals <-raw_alrc_rels_enabled_by<-
-    raw_alrc_rels_modifications <-NULL
-
   # Filter data based on rel_type
   if (rel_type == "amendments") {
     data <- raw_alrc_rels_amend_leg
