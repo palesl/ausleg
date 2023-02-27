@@ -7,9 +7,20 @@
 <!-- badges: end -->
 
 The goal of ausleg is to provide information on laws passed by the
-Australian Parliament since 1901. This package provides data up to
-November 2021. The data was scraped from the [Federal Register of
-Legislation](https://www.legislation.gov.au).[^1]
+Australian Parliament since 1901.
+
+The functions: getPrincipalActs; getAmendingActs provide data up to
+November 2021. The data was scraped by myself from the [Federal Register
+of Legislation](https://www.legislation.gov.au)[^1] and is archived
+[here](https://www.github.com/palesl/Federal_Register_of_Legislation_Australia).
+
+The functions: alrc_as_made; alrc_rels provide data up to April 2022.
+This data was scraped by the Australian Law Reform Centre[^2] in
+collaboration with the University of New South Wales and is stored on
+the [ALRC datahub
+website](https://www.alrc.gov.au/datahub/download-the-data/). These
+functions make use of the more comprehensive linkage data provided by
+the ALRC and should be preferred for those beginning new data projects.
 
 ## Installation
 
@@ -48,6 +59,17 @@ getPrincipalActs()
 #> #   dept_4 <chr>, dept_5 <chr>, dept_6 <chr>, dept_7 <chr>, and abbreviated
 #> #   variable names ¹​id_principal, ²​date_enacted, ³​year_enacted, ⁴​date_repealed,
 #> #   ⁵​repealing_act_id, ⁶​word_count, ⁷​departments
+
+
+# get relationships where one act repeals another 
+
+alrc_relationship_data(rel_type = "repeals")
+#> NULL
+
+# get all pieces of regulation legislation
+
+alrc_as_made(leg_type="Regulations")
+#> NULL
 ```
 
 ## Use at own risk
@@ -65,3 +87,7 @@ Project](https://thenounproject.com/browse/icons/term/canberra-parliament-house/
 
 [^1]: Redistributing under the FLR’s Creative Commons 4.0 [copyright
     licence](https://www.legislation.gov.au/Content/Disclaimer#copyright).
+
+[^2]: Redistributing under the ALRC’s Creative Commons 4.0 [copyright
+    licence (see bottom of the
+    page)](https://www.alrc.gov.au/datahub/download-the-data/).

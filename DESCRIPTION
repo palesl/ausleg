@@ -9,7 +9,10 @@ Description: This package provides data from the Federal Register of Legislation
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Imports: 
     dplyr,
     utils
+Depends: 
+    R (>= 2.10)
+LazyData: true
