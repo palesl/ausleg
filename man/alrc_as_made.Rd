@@ -15,13 +15,13 @@ Options are "Acts", "Regulations", or "Other LI". Default is NULL, which does no
 apply this filter.}
 }
 \value{
-\if{html}{\out{<div class="sourceCode">}}\preformatted{      A filtered data object.
+\if{html}{\out{<div class="sourceCode">}}\preformatted{      A tibble.
 }\if{html}{\out{</div>}}
 }
 \description{
-This function filters data from the Australian Law Reform Commission's "As Made"
-dataset based on the specified principal/amending and legislation type. The default
-dataset is the full "As Made Commonwealth Legislation" dataset.
+This function filters data from the Australian Law Reform Commission's
+"As Made Commonwealth Legislation" dataset based on the specified
+principal/amending and legislation type. The default is the full "As Made" dataset.
 }
 \examples{
 alrc_as_made(prin_amend = "Principal", leg_type = "Acts")

@@ -17,12 +17,16 @@
 alrc_as_made <- function(prin_amend = NULL, leg_type = NULL) {
 
   # Input validation
-  if (!is.null(prin_amend) && !is.character(prin_amend)) {
-    stop("prin_amend must be a character string")
+
+  if (!is.null(prin_amend) && !(prin_amend=="Principal" |
+                               prin_amend=="Amending")) {
+    stop("Invalid prin_amend. Options are 'Principal' or 'Amending'")
   }
 
-  if (!is.null(leg_type) && !is.character(leg_type)) {
-    stop("leg_type must be a character string")
+  if (!is.null(leg_type) && !(leg_type=="Acts" |
+                             leg_type=="Regulations" |
+                             leg_type=="Other LI")) {
+    stop("Invalid leg_type. Options are 'Acts', 'Regulations' or 'Other LI'")
   }
 
   # defining global variables as null

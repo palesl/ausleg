@@ -12,7 +12,7 @@ Options are "amendments", "repeals", "enabled_by", or "modifications".
 Default is "amendments".}
 }
 \value{
-\if{html}{\out{<div class="sourceCode">}}\preformatted{    A filtered data object.
+\if{html}{\out{<div class="sourceCode">}}\preformatted{    A tibble.
 }\if{html}{\out{</div>}}
 }
 \description{
